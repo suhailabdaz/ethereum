@@ -1,0 +1,560 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ethereum clone</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="script.js">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/EthereumLOGO-removebg-preview.png">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <!-- header - start -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <div>
+            <a class="navbar-brand" href="#"><img src="image/EthereumLOGO-removebg-preview.png" alt="" style="max-width: 150px; max-height: 50px;"></a>
+            </div>
+    
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                      <div class="dropdown show">
+                        <a class="btn btn-none dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Use Ethereum
+                        </a>
+                      
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                          <a class="dropdown-item" href="#">Find wallet</a>
+                          <a class="dropdown-item" href="#">Get ETH</a>
+                          <a class="dropdown-item" href="#">Decentralized applications (dapps)</a>
+                        </div>
+                      </div>
+                </li>
+                <li class="nav-item">
+                  <div class="dropdown show">
+                    <a class="btn btn-none dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      learn
+                    </a>
+                  
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                      <span class="css-n812ba fw-bold" style="margin-left: 20px;">Start here</span>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Learn Hub</a>
+                      <a class="dropdown-item" href="#">Guides hub</a>
+                      <a class="dropdown-item" href="#">Ethereum basics</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                  <div class="dropdown show">
+                    <a class="btn btn-non dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Developers
+                    </a>
+                  
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                      <a class="dropdown-item" href="#">Developers' home</a>
+                      <a class="dropdown-item" href="#">Documentation</a>
+                      <a class="dropdown-item" href="#">Tutorials</a>
+                      <a class="dropdown-item" href="#">Learn by coding</a>
+                      <a class="dropdown-item" href="#">Set up local environment</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <div class="dropdown show">
+                    <a class="btn btn-non dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Enterprise
+                    </a>
+                  
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                      <a class="dropdown-item" href="#">Mainnet Ethereum</a>
+                      <a class="dropdown-item" href="#">Private Ethereum</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <div class="dropdown show">
+                    <a class="btn btn-non dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Community
+                    </a>
+                  
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                      <a class="dropdown-item" href="#">Community hub</a>
+                      <a class="dropdown-item" href="#">Online communities</a>
+                      <a class="dropdown-item" href="#">Ethereum events</a>
+                      <a class="dropdown-item" href="#">Get involved</a>
+                      <a class="dropdown-item" href="#">Open research</a>
+                      <a class="dropdown-item" href="#">Grants</a>
+                    </div>
+                  </div>
+                  </li>
+              </ul>
+           
+              <form class="form-inline my-2 my-lg-0 " style="margin-right: 30px;">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" focusable="false" class="chakra-icon css-13otjrl right-nav" aria-hidden="true" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="margin-right: 10px;"><path fill="none" d="M0 0h24v24H0z"></path><path d="M10 2c-1.82 0-3.53.5-5 1.35C7.99 5.08 10 8.3 10 12s-2.01 6.92-5 8.65C6.47 21.5 8.18 22 10 22c5.52 0 10-4.48 10-10S15.52 2 10 2z "></path></svg>
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" focusable="false" class="chakra-icon css-1ktqhdy right-nav" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="margin-right: 10px;"><path fill="none" d="M0 0h24v24H0z"></path><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zm6.93 6h-2.95a15.65 15.65 0 00-1.38-3.56A8.03 8.03 0 0118.92 8zM12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96zM4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2 0 .68.06 1.34.14 2H4.26zm.82 2h2.95c.32 1.25.78 2.45 1.38 3.56A7.987 7.987 0 015.08 16zm2.95-8H5.08a7.987 7.987 0 014.33-3.56A15.65 15.65 0 008.03 8zM12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96zM14.34 14H9.66c-.09-.66-.16-1.32-.16-2 0-.68.07-1.35.16-2h4.68c.09.65.16 1.32.16 2 0 .68-.07 1.34-.16 2zm.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95a8.03 8.03 0 01-4.33 3.56zM16.36 14c.08-.66.14-1.32.14-2 0-.68-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2h-3.38z"></path></svg>
+               <span class="right-nav"><span class="chakra-text css-hello" style="font-size: 15px; margin-right: 10px;"><span class="css-yvcseo" style="font-size: 12px;">Languages</span> <!-- -->EN</span></span> 
+              </form>
+            </div>
+          </nav>
+      </header>
+    <!--######## header end ############-->
+
+    <!--############ 1st image section start ###########-->
+    <section>
+        <div>
+            <img src="img/Hero.png" class="img-fluid pt-5" alt="Hero">
+        </div>
+    </section>
+    <!--######## 1st image section end-->
+
+    <!--########### Welcoming section start ##############-->
+    <section>
+        <div class="row">
+            <div class="col-md-12 col-12 d-flex justify-content-center align-items-center"
+                style="height: 300px !important;">
+                <div class="text-center text-secondary-emphasis" style="max-width: 550px;">
+                    <h1 class="fw-bold">Welcome to Ethereum</h1>
+                    <p class="text-secondary fs-5">Ethereum is the community-run technology powering the cryptocurrency
+                        ether (ETH) and thousands of decentralized applications.</p>
+                    <a href="#" class="btn btn-primary button" style="background-color:blue">Explore Ethereum</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--########### Welcoming section end ###############-->
+
+
+    <!--########## left-content right-image  start ############## __1 -->
+    <section>
+        <div class="row p-3" style="height: 550px; ">
+            <div class="row">
+                <div class="col-md-6 col-12 d-flex align-items-center justify-content-center">
+                    <div style="max-width:440px">
+                        <br><br><br>
+                        <h2 class="fw-bold">Get started</h2>
+                        <p class="fs-5">ethereum.org is your portal into the world of Ethereum. The tech is new and
+                            ever-evolving - it helps to have a guide. Here's what we recommend you do if you want to
+                            dive in.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-12 col-sm-10 d-flex align-items-center" style="max-height:500px;">
+                    <img src="https://ethereum.org/static/9a6e158f4ffd1cb5de246a3ecd0d7f86/d7270/hackathon_transparent.png"
+                        class="img-fluid" alt="">
+                </div>
+            </div>
+    </section>
+    <!--########## left-content right-image  End ############## __1 -->
+
+
+    <!--########### cards section start ##############-->
+    <section>
+        <div class="container pt-5 mt-5">
+            <div class="row row-cols-1 row-cols-md-2 g-4" style="min-height: 100vh;">
+                <div class="col">
+
+                    <div class="card">
+                        <img src="img/Wallet.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Pick a wallet</h5>
+                            <p class="card-text">So choose your wallet based on the features you want.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card">
+                        <img src="img/GetEth.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Get ETH</h5>
+                            <p class="card-text">ETH is the currency of Ethereum - you can use it in any applications.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card">
+                        <img src="img/UseDapp.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Use a dapp</h5>
+                            <br>
+                            <p class="card-text">Dapps are applications powered by Ethereum. See whay you can do.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card">
+                        <img src="img/startDeveloping.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Start building</h5>
+                            <p class="card-text">If you want to start coding with Ethereum, we have documentation,
+                                tutorials, and more in our developer portal.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--############# cards section end ############-->
+
+    <section>
+        <div style="width: 100%; height: 10px;"></div>
+    </section>
+
+    <!--########## left-content right-image  start ############## __1 -->
+    <section>
+        <div class="custom-container">
+            <div class="row content-one p-3" style="min-height: 100vh;">
+                <div class="col-md-6 col-12 d-flex align-items-center justify-content-center" style="max-height:750px;">
+                    <img src="img/1what-is-ethereum.png" class="img-fluid object-fit-contain" alt=""
+                        style="max-width: 100%; max-height: 100%;">
+                </div>
+                <div class="col-md-6 col-12 d-flex align-items-center justify-content-center">
+                    <div style="max-width:440px">
+                        <br><br><br>
+                        <h2 class="fw-bold">What is Ethereum?</h2>
+                        <p class="fs-5">Ethereum is a technology that's home to digital money, global payments, and
+                            applications. The community has built a booming digital economy, bold new ways for creators
+                            to earn online, and so much more. It's open to everyone, wherever you are in the world - all
+                            you need is the internet.</p>
+
+                        <button type="button" class="btn btn-primary" style="background-color:blue">What is
+                            Ethereum?</button>
+                        <button type="button" class="btn btn-outline-primary"
+                            style="border-color: blue; color:blue">More on digital money</button>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    <!--########## left-content right-image  End ############## __1 -->
+
+
+    <!--########### left-image right-content start __2  ###############-->
+    <section>
+        <div class="custom-container">
+            <div class="row content-two p-3" style="min-height: 100vh;">
+
+                <div class="col-md-6 col-12 d-flex align-items-center justify-content-center">
+                    <div style="max-width:440px">
+                        <br><br><br>
+                        <h2 class="fw-bold">A fairer financial system</h2>
+                        <p class="fs-5">Today, billions of people can't open bank accounts, others have their payments
+                            blocked. Ethereum's decentralized finance (DeFi) system never sleeps or discriminates. With
+                            just an internet connection, you can send, receive, borrow, earn interest, and even stream
+                            funds anywhere in the world.</p>
+                        <button type="button" class="btn btn-primary" style="background-color:blue">Explore
+                            DeFi</button>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-12 d-flex align-items-center justify-content-center" style="max-height:850px;">
+                    <img src="img/impact_transparent.png" class="img-fluid" alt=""
+                        style="max-width: 100%; max-height: 100%;">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--########### left-image right-content End __2  ###############-->
+
+    <!--########### left-content right-image start __3  ###############-->
+    <section>
+        <div class="row content-three p-3" style="min-height: 100vh;">
+            <div class="col-md-6 col-12 d-flex align-items-center justify-content-center" style="max-height:850px;">
+                <img src="img/infrastructure_transparent.png" class="img-fluid object-fit-contain" alt=""
+                    style="max-width: 100%; max-height: 100%;">
+            </div>
+            <div class="col-md-6 col-12 d-flex align-items-center justify-content-center">
+                <div style="max-width:440px">
+                    <br><br><br>
+                    <h2 class="fw-bold">The internet of assets</h2>
+                    <p class="fs-5">Ethereum isn't just for digital money. Anything you can own can be represented,
+                        traded and put to use as non-fungible tokens (NFTs). You can tokenise your art and get royalties
+                        automatically every time it's re-sold. Or use a token for something you own to take out a loan.
+                        The possibilities are growing all the time.</p>
+
+                    <button type="button" class="btn btn-primary" style="background-color:blue">More on NFTs</button>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--########### left-content right-image End __3  ###############-->
+    <!--########### left-image right-content start __4  ###############-->
+
+    <section>
+        <div class="row content-four p-3" style="min-height: 100vh;">
+
+            <div class="col-md-6 col-12 d-flex align-items-center justify-content-center">
+                <div style="max-width:440px">
+                    <br><br><br>
+                    <h2 class="fw-bold">An open internet</h2>
+                    <p class="fs-5">Today, we gain access to 'free' internet services by giving up control of our
+                        personal data. Ethereum services are open by default – you just need a wallet. These are free
+                        and easy to set up, controlled by you, and work without any personal info.</p>
+                    <button type="button" class="btn btn-primary" style="background-color:blue">Explore DeFi</button>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-12 d-flex align-items-center justify-content-center" style="max-height:750px;">
+                <img src="img/future_transparent.png" class="img-fluid" alt=""
+                    style="max-width: 100%; max-height: 100%;">
+            </div>
+        </div>
+    </section>
+
+
+    <!--########### left-image right-content End__4  ###############-->
+
+
+    <!--########### left-content right-image Start__5  ###############-->
+    <section>
+        <div class="row content-three p-3" style="min-height: 100vh;">
+            <div class="col-md-6 col-12 d-flex align-items-center justify-content-center" style="max-height:750px;">
+                <img src="img/Developer_portal.png" class="img-fluid object-fit-contain" alt=""
+                    style="max-width: 85%; max-height: 85%;">
+            </div>
+            <div class="col-md-6 col-12 d-flex align-items-center justify-content-center">
+                <div style="max-width:540px">
+                    <br><br><br>
+                    <h2 class="fw-bold">A new frontier for development</h2>
+                    <p class="fs-5">Ethereum and its apps are transparent and open source. You can fork code and re-use
+                        functionality others have already built. If you don't want to learn a new language you can just
+                        interact with open-sourced code using JavaScript and other existing languages.</p>
+
+                    <button type="button" class="btn btn-primary" style="background-color:blue">Developer
+                        portal</button>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <div>
+
+    </div>
+
+    <!--########### left-content right-image End__5  ###############-->
+
+    <section>
+        <div class="container">
+
+            <div class="row row-cols-1 row-cols-md-3 g-4 p-3" style="min-height: 100vh;">
+                <div class="col" style="max-height: 500px; max-width: 500px">
+                    <div class="card h-100">
+                        <div class="contain">
+                            <img src="img/merge_cards.png" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <br><br>
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col" style="max-height: 500px; max-width: 500px">
+                    <div class="card h-100">
+                        <img src="img/infrastructure_transparent.png" class="card-img-top " style="max-width: 350px;"
+                            alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This card has supporting text below as a natural lead-in to additional
+                                content.</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col" style="max-height: 500px; max-width: 500px">
+                    <div class="card h-100 ">
+                        <img src="img/enterprise-eth.png" class="card-img-top img-fluid" alt="...">
+                        <div class="card-body">
+
+                            <br><br>
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This card has even longer content than the first to show that equal
+                                height action.</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        </div>
+    </section>
+
+
+    <!--########### left-image right-content start __6  ###############-->
+    <section>
+        <div class="container">
+            <div class="row content-five p-3" style="min-height: 500px;">
+
+                <div class="col-md-6 col-12 d-flex align-items-center justify-content-center">
+                    <div style="max-width:440px">
+                        <br><br><br>
+                        <h2 class="fw-bold">Contribute to ethereum.org</h2>
+                        <p class="fs-5">This website is open source with hundreds of community contributors. You can
+                            propose edits to any of the content on this site, suggest awesome new features, or help us
+                            squash bugs.</p>
+                        <button type="button" class="btn btn-primary" style="background-color:blue">Explore
+                            DeFi</button>
+                        <button type="button" class="btn btn-outline-primary"
+                            style="border-color: blue; color:blue">More on digital money</button>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-12 d-flex align-items-center justify-content-center" style="max-height:850px;">
+                    <img src="img/finance_transparent.png" class="img-fluid" alt=""
+                        style="max-width: 100%; max-height: 100%;">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--########### left-image right-content End __6  ###############-->
+
+    <section>
+        <div class="container max-height:350px">
+            <div class="row">
+                <div class="col-md-6 col-12 max-height:100px">
+                    <p>Website Last updated on: August 10 2023</p>
+                </div>
+                <div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ############### footer start ###################---------------->
+
+    <section>
+        <div class="container right-nav mb-5">
+            <div class="row">
+                <div class="col-md-2 col-6">
+                    <ul class="list-type">
+                        <li><a href=""><b>Use Ethereum</b></a></li>
+                        <li><a href="">Find wallet</a></li>
+                        <li><a href="">Get ETH</a></li>
+                        <li><a href="">Decentralized applications (dapps)</a></li>
+                        <li><a href="">Layer 2</a></li>
+                        <li><a href="">Run a node</a></li>
+                        <li><a href="">Stablecoins</a></li>
+                        <li><a href="">Stake ETH</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 col-6">
+                    <ul class="list-type">
+                        <li><a href=""><b>Learn</b></a></li>
+                        <li><a href="">Learn Hub</a></li>
+                        <li><a href="">What is Ethereum?</a></li>
+                        <li><a href="">What is ether (ETH)?</a></li>
+                        <li><a href="">Ethereum wallets</a></li>
+                        <li><a href="">Ethereum security and scam prevention</a></li>
+                        <li><a href="">What is Web3?</a></li>
+                        <li><a href="">Smart contracts</a></li>
+                        <li><a href="">Set up local environment</a></li>
+                        <li><a href="">Ethereum energy consumption</a></li>
+                        <li><a href="">Ethereum roadmap</a></li>
+                        <li><a href="">Ethereum Improvement Proposals</a></li>
+                        <li><a href="">History of Ethereum</a></li>
+                        <li><a href="">Ethereum Whitepaper</a></li>
+                        <li><a href="">Ethereum glossary</a></li>
+                        <li><a href="">Ethereum governance</a></li>
+                        <li><a href="">Blockchain bridges</a></li>
+                        <li><a href="">Zero-knowledge proofs</a></li>
+                        <li><a href="">Quiz Hub</a></li>
+
+                    </ul>
+                </div>
+                <div class="col-md-2 col-6">
+                    <ul class="list-type">
+                        <li><a href=""><b>Developers</b></a></li>
+                        <li><a href="">Get started</a></li>
+                        <li><a href="">Documentation</a></li>
+                        <li><a href="">Tutorials</a></li>
+                        <li><a href="">Learn by coding</a></li>
+
+                    </ul>
+                </div>
+                <div class="col-md-2 col-6">
+                    <ul class="list-type">
+                        <li><a href=""><b>Ecosystem</b></a></li>
+                        <li><a href="">Community hub</a></li>
+                        <li><a href="">Ethereum Foundation</a></li>
+                        <li><a href="">Ethereum bug bounty program</a></li>
+                        <li><a href="">Ecosystem Grant Programs</a></li>
+                        <li><a href="">Ethereum brand assets</a></li>
+                        <li><a href="">Devcon</a></li>
+
+                    </ul>
+                </div>
+                <div class="col-md-2 col-6">
+                    <ul class="list-type">
+                        <li><a href=""><b>Enterprise</b></a></li>
+                        <li><a href="">Mainnet Ethereum</a></li>
+                        <li><a href="">Private Ethereum</a></li>
+                        <li><a href="">Enterprise</a></li>
+
+                    </ul>
+                </div>
+                <div class="col-md-2 col-6">
+                    <ul class="list-type">
+                        <li><a href=""><b>About ethereum.org</b></a></li>
+                        <li><a href="">About us</a></li>
+                        <li><a href="">Jobs</a></li>
+                        <li><a href="">Contributing</a></li>
+                        <li><a href="">Language support</a></li>
+                        <li><a href="">Privacy policy</a></li>
+                        <li><a href="">Terms of use</a></li>
+                        <li><a href="">Cookie policy</a></li>
+                        <li><a href="">Contact</a></li>
+
+                    </ul>
+                </div>
+            </div>
+
+    </section>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+        integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+        crossorigin="anonymous"></script>
+    <!--chart.js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.3.0/chart.min.js"
+        integrity="sha512-mlz/Fs1VtBou2TrUkGzX4VoGvybkD9nkeXWJm3rle0DPHssYYx4j+8kIS15T78ttGfmOjH0lLaBXGcShaVkdkg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
+</html>
